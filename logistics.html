@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logistics - Administration</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+        <img src="image/logo.jpg" alt="Logo" class="me-2 nav-logo" onerror="this.style.display='none'">
+        Administration Portal
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain4">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="performance.html">Performance</a></li>
+          <li class="nav-item"><a class="nav-link" href="task.html">Tasks</a></li>
+          <li class="nav-item"><a class="nav-link active" href="logistics.html">Logistics</a></li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-danger btn-sm" id="logoutBtn4">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section><h4>Logistics</h4>
+      </section>
+    <p class="text-white">Maintain material/resource inventory & status here.</p>
+
+    <div class="card p-3">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover" id="logisticsTable">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>Item</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Location</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Projector</td>
+              <td>Equipment</td>
+              <td>2</td>
+              <td>Admin Office</td>
+              <td><span class="badge bg-success">Available</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Meeting Room Key</td>
+              <td>Access</td>
+              <td>1</td>
+              <td>Reception</td>
+              <td><span class="badge bg-warning text-dark">Checked Out</span></td>
+            </tr>
+              <tr>
+    <td>3</td>
+    <td>Laptop (Dell)</td>
+    <td>Equipment</td>
+    <td>5</td>
+    <td>IT Storage</td>
+    <td><span class="badge bg-success">Available</span></td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Whiteboard Markers</td>
+    <td>Supplies</td>
+    <td>24</td>
+    <td>Stationery Room</td>
+    <td><span class="badge bg-success">In Stock</span></td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Extension Cables</td>
+    <td>Utilities</td>
+    <td>10</td>
+    <td>Maintenance Room</td>
+    <td><span class="badge bg-secondary">Low Stock</span></td>
+  </tr>
+</tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="java/script.js"></script>
+</body>
+</html>

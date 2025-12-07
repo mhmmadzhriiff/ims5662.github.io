@@ -1,0 +1,113 @@
+
+/* Navbar background + slight shadow */
+.navbar {
+  background-color: #4A3B87 !important; /* modern purple shade */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section {
+  background: transparent (0,0,0,0.4);
+  color: rgb(0, 0, 0);
+}
+
+/* Logo + text */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  color: #EDEDF7 !important;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Active page */
+.navbar .nav-link.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Logout button */
+#logoutBtn4 {
+  background-color: #E63946;
+  border: none;
+}
+
+/* Hamburger icon (mobile) */
+.navbar-light .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+body {
+  background-image: url("../image/background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Section containers for readability */
+section {
+  background: rgba(255,255,255,0.85);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+
+/* Logo sizes */
+.logo {
+  max-width: 80px;
+  height: auto;
+}
+.nav-logo {
+  height: 32px;
+  width: auto;
+}
+
+/* Card appearance */
+.card {
+  border-radius: 0.6rem;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 575px) {
+  .nav-logo { display: none; }
+}
+
+/* Announcements list styles */
+.announcement {
+  border-left: 3px solid #0d6efd;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  background: #fbfbff;
+  border-radius: 0.3rem;
+}
+
+/* Small utilities */
+.badge-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.45rem;
+}
+
+/* Table tweaks */
+.table thead th {
+  vertical-align: middle;
+}
+
+/* Simple form spacing */
+form .row .col-md-3, form .row .col-md-6 {
+  margin-bottom: 0.5rem;
+}
+
+

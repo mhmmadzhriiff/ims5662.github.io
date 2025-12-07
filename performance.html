@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Performance - Administration</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Reuse same navbar markup for consistency -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="dashboard.html">
+        <img src="image/logo.jpg" alt="Logo" class="me-2 nav-logo" onerror="this.style.display='none'">
+        Administration Portal
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain2">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link active" href="performance.html">Performance</a></li>
+          <li class="nav-item"><a class="nav-link" href="task.html">Tasks</a></li>
+          <li class="nav-item"><a class="nav-link" href="logistics.html">Logistics</a></li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-danger btn-sm" id="logoutBtn2">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+  <section>
+    <h4>Administration Performance</h4>
+      </section>
+    <p class="text-white">Good Job so far lads! Keep Going!!.</p>
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <div class="card p-3">
+          <h6>KPIs</h6>
+          <ul>
+            <li>Track daily, weekly, and monthly active users to measure engagement and platform usage.</li>
+            <li>Monitor server uptime percentage, average response time, and error rates to ensure stable and reliable system performance.</li>
+            <li>Measure how many assigned tasks or processes are completed within defined timeframes, reflecting efficiency and workflow performance.</li>
+            <li>Track number of support tickets, average resolution time, and customer satisfaction ratings to evaluate service effectiveness.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="card p-3">
+          <h6>Trend Chart: Completed Tasks (last 6 months)</h6>
+          <canvas id="performanceChart" height="120"></canvas>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card p-3">
+          <h6>Notes & Improvement</h6>
+          <ol>
+            <li>Record system issues and note required fixes.</li>
+            <li>Log suggestions for feature enhancements or UI improvements.</li>
+            <li>Document performance gaps and define actions to improve them.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="java/script.js"></script>
+</body>
+</html>
